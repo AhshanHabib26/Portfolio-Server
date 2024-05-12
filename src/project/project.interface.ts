@@ -5,4 +5,6 @@ export type TProject = {
   startDate: string;
   endDate: string;
   image: string;
+  githubLink: string;
+  liveLink: string;
 };

@@ -27,6 +27,14 @@ const projectSchema = new Schema<TProject>(
       type: String,
       required: true,
     },
+    githubLink: {
+      type: String,
+      required: true,
+    },
+    liveLink: {
+      type: String,
+      required: true,
+    },
   },
   { timestamps: true }
 );
