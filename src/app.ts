@@ -4,6 +4,7 @@ import errorHandler from "./middlewares/errorHandler";
 import authHandler from "./user/user.router";
 import experineceHandler from "./experience/experience.router";
 import skillsHandler from "./skills/skills.router";
+import projectHandler from "./project/project.router";
 const app = express();
 
 // Middleware
@@ -14,6 +15,7 @@ app.use(cors());
 app.use("/api/auth", authHandler);
 app.use("/api/experience", experineceHandler);
 app.use("/api/skill", skillsHandler);
+app.use("/api/project", projectHandler);
 
 app.get("/", (req, res) => {
   res.send("Welcome to M A AHSHAN HABIB World!");
